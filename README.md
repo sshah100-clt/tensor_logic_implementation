@@ -1,6 +1,4 @@
-Tensor Logic: Empirical Validation
-
-This repository contains empirical implementations of the "Tensor Logic" framework proposed by Pedro Domingos (2025). The project validates the core premise that logical rules and Einstein summation (einsum) are mathematically equivalent operations.
+This repository contains an implementation of the "Tensor Logic" framework proposed by Pedro Domingos (2025). The project validates the core premise that logical rules and Einstein summation (einsum) are mathematically equivalent operations.
 
 The code demonstrates how logical inference can be performed using tensor contraction, both in discrete symbolic space (using NumPy) and learnable embedding space (using PyTorch).
 
@@ -23,7 +21,8 @@ File: bible.ipynb
 
 The Challenge: Use matrix multiplication to discover every ancestor in a genealogy graph starting only with a list of immediate parents.
 
-Data: A graph of 1,972 people and 1,727 parent-child links derived from biblical text.
+Data: A graph of 1,972 people and 1,727 parent-child links derived from the Old Testament (Tanakh) and New Testament.
+
 
 Method: The code treats the "Parent" list as an adjacency matrix. By repeatedly multiplying this matrix by itself (iterative tensor contraction), it ripples through the generations to find the "transitive closure".
 
